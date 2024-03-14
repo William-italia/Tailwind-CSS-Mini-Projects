@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Modal</title>
+</head>
+<body>
+    <!-- global container -->
+    <div class="flex items-center justify-center min-h-screen bg-slate-100">
+        <!-- card -->
+        <div class="flex flex-col justify-center bg-white p-6 m-3 space-y-10 rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16">
+            <div>
+                <img class="mx-auto w-60 hover:scale-105 transition-transform duration-400" src="./images/headphone.png" alt="">
+            </div>
+            <!-- content -->
+            <div class="flex flex-col space-y-6">
+                <!-- label and description -->
+                <div class="flex flex-col mb-4 text-center md:text-left space-y-4">
+                    <div>
+                        <div class="bg-black rounded-full text-white inline-block">
+                           <p class="px-4 py-1 text-xs">Free Shipping</p>
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <div class="max-w-sm text-2xl font-medium">
+                        <h2>Razer Kraken Kitty Edt Gaming Headset Quartz</h2>
+                    </div>
+
+                    <!-- price container -->
+                    <div class="flex flex-col space-y-4 text-center md:text-left">
+                        <p class="line-through">$799</p>
+                        <p class="text-5xl font-bold">$599</p>
+                        <p class="text-sm font-light text-gray-500">
+                            This offer is valid until April 3rd or as long as stock lasts!
+                        </p>
+                    </div>
+
+                    <!-- button group -->
+                    <div class="group">
+                        <button class="w-full bg-blue-700 text-white border-b-8 border-b-blue-700 rounded-lg group-hover:border-t-8 group-hover:border-b-0 group-hover:bg-blue-700 group-hover:border-t-blue-700 group-hover:shadow-lg transition-all duration-150">
+                            <div class="px-6 py-4 bg-blue-500 duration-150 rounded-lg group-hover:bg-blue-700">
+                                Add to cart
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- stock -->
+                    <div class="flex items-center space-x-3 group">
+                        <div class="w-3 h-3 bg-green-400 rounded-full group-hover:animate-ping">                    
+                        </div>
+                        <div class="text-sm">50+ pcs. in stock</div>
+                    </div>
+
+                    <!-- bottom bottons -->
+                    <div class="flex flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row">
+                        <button class="group flex items-center justify-center py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-400">
+                            <!-- <img src="images/weight.png" alt="" class="w-8 h-8"> -->
+                            <i class="fa-solid fa-cart-shopping fa-xl group-hover:text-yellow-500 transition-colors duration-500"></i>
+                            <a href="">Add to cart</a>
+                        </button>
+                        <button class="group flex items-center justify-center py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-400">
+                            <!-- <img src="images/weight.png" alt="" class="w-8 h-8"> -->
+                            <i class="fa-regular fa-heart group-hover:text-red-700 fa-xl transition-colors duration-500"></i>
+                            <a href="">Add to wishlist</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
