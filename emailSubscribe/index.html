@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex items-center justify-center h-screen bg-zinc-700">
+        <!-- card -->
+        <div class="bg-zinc-800 p-2 mx-6 rounded-2xl">
+            <!-- flex-container -->
+            <div class="flex flex-col md:flex-row rounded-l-xl">
+                <!-- img -->
+                <img class="object-cover rounded-xl h-80 md:h-64 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-500" src="./images/image.jpg" alt="">
+
+                <!-- content -->
+                <div class="p-6">
+                    <h2 class="font-serif text-xl font-medium text-center text-white md:text-left">
+                        Get diet and fitness tips in your inbox
+                    </h2>
+                    <p class="max-w-xs my-4 text-xs leading-5 tracking-wide text-center text-white md:text-left ">
+                        Eat better and exercise better. Sign up for the Diet&Fitness newsletter.
+                    </p>
+                    <!-- input -->
+                    <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
+                        <form class="flex flex-col md:flex-row">
+                            <input id="input" class="bg-transparent border border-zinc-600 text-center p-2 mb-4 md:mb-0 md:mr-4 placeholder:text-xs placeholder:text-center placeholder:md:text-left focus:outline-none text-white" type="text" placeholder="Enter Your Email Address">
+                            <button id="button" class="px-5 py-3 text-xs text-zinc-800 rounded-md bg-lime-500 hover:bg-lime-400 transition-colors duration-500">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
